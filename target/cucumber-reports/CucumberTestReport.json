@@ -1,0 +1,943 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-16T17:47:23.749Z",
+        "line": 4,
+        "name": "The purpose of this test case is to verify the create booking API functionality.",
+        "description": "",
+        "id": "create-booking-api:;the-purpose-of-this-test-case-is-to-verify-the-create-booking-api-functionality.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has access to create book endpoint \"createBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createBooking\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.CreateBooking.user_has_access_to_create_book_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3844000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates book with valid data",
+            "match": {
+              "location": "stepDefinations.CreateBooking.user_creates_book_with_valid_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4109000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should get the response code 200 for createBooking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateBooking.user_should_get_the_response_code_for_create_booking(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1579000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should get the bookingId",
+            "match": {
+              "location": "stepDefinations.CreateBooking.user_should_get_the_booking_id()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          },
+          {
+            "name": "@createBooking"
+          }
+        ]
+      }
+    ],
+    "name": "Create Booking API:",
+    "description": "",
+    "id": "create-booking-api:",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CreateBooking.feature",
+    "tags": [
+      {
+        "name": "@bookerAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@createBooking",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-16T17:47:33.702Z",
+        "line": 4,
+        "name": "The purpose of this test case is to verify the get book details by valid book Id.",
+        "description": "",
+        "id": "get-book-details-by-booking-id:;the-purpose-of-this-test-case-is-to-verify-the-get-book-details-by-valid-book-id.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has access to get booking details by Booking Id endpoint \"GetBookingDetailsById\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetBookingDetailsById\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinations.GetBookDetailByID.user_has_access_to_get_booking_details_by_booking_id_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1156000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user pass the valid booking Id as a path parameter",
+            "match": {
+              "location": "stepDefinations.GetBookDetailByID.user_pass_the_valid_booking_id_as_a_path_parameter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should get the response code 200 for GetBookingDetailsById API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.GetBookDetailByID.user_should_get_the_response_code_for_get_booking_details_by_id_api(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verify the response body data",
+            "match": {
+              "location": "stepDefinations.GetBookDetailByID.user_verify_the_response_body_data()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          },
+          {
+            "name": "@GetBookDetailsByBookID"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:35.064Z",
+        "line": 10,
+        "name": "The purpose of this test case is to verify the get book details by invalid book Id.",
+        "description": "",
+        "id": "get-book-details-by-booking-id:;the-purpose-of-this-test-case-is-to-verify-the-get-book-details-by-invalid-book-id.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user has access to get booking details by Booking Id endpoint \"GetBookingDetailsById\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetBookingDetailsById\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinations.GetBookDetailByID.user_has_access_to_get_booking_details_by_booking_id_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1127000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user pass the invalid booking Id as a path parameter",
+            "match": {
+              "location": "stepDefinations.GetBookDetailByID.user_pass_the_invalid_booking_id_as_a_path_parameter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should get the response code 404 for invalid BookingID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.GetBookDetailByID.user_should_get_the_response_code_for_invalid_booking_id(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user verify the respose body should display \"Not Found\" as a error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinations.GetBookDetailByID.user_verify_the_respose_body_should_display_as_a_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          },
+          {
+            "name": "@GetBookDetailsByBookID"
+          }
+        ]
+      }
+    ],
+    "name": "Get Book Details By Booking ID:",
+    "description": "",
+    "id": "get-book-details-by-booking-id:",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GetBookByID.feature",
+    "tags": [
+      {
+        "name": "@bookerAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@GetBookDetailsByBookID",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-16T17:47:36.239Z",
+        "line": 4,
+        "name": "The purpose of this test case is to verify login API functionality with a valid username \u0026 password.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-test-case-is-to-verify-login-api-functionality-with-a-valid-username-\u0026-password.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates a auth token with credential \"admin\" \u0026 \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"password123\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1085000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should get the auth token",
+            "match": {
+              "location": "stepDefinations.CreateToken.user_should_get_the_auth_token()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:37.408Z",
+        "line": 11,
+        "name": "The purpose of this test case is to verify login API functionality with a invalid username \u0026 password.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-test-case-is-to-verify-login-api-functionality-with-a-invalid-username-\u0026-password.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user creates a auth token with invalid credential \"adminn\" \u0026 \"password1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminn\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"password1234\"",
+                  "offset": 61
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1128000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:38.586Z",
+        "line": 17,
+        "name": "The purpose of this test case is to verify login API functionality with a valid username \u0026 invalid password.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-test-case-is-to-verify-login-api-functionality-with-a-valid-username-\u0026-invalid-password.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user creates a auth token with invalid credential \"admin\" \u0026 \"password1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"password1234\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1172000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:39.811Z",
+        "line": 23,
+        "name": "The purpose of this test case is to verify login API functionality with a invalid username \u0026 valid password.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-test-case-is-to-verify-login-api-functionality-with-a-invalid-username-\u0026-valid-password.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user creates a auth token with invalid credential \"adminn\" \u0026 \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminn\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"password123\"",
+                  "offset": 61
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1110000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:40.993Z",
+        "line": 29,
+        "name": "The purpose of this testcase is to verify the login API functionality, while user set blank value for username and password field.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-testcase-is-to-verify-the-login-api-functionality--while-user-set-blank-value-for-username-and-password-field.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user creates a auth token with invalid credential \"\" \u0026 \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:42.095Z",
+        "line": 35,
+        "name": "The purpose of this testcase is to verify the login API functionality, while user set valid value for username and blank value password field.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-testcase-is-to-verify-the-login-api-functionality--while-user-set-valid-value-for-username-and-blank-value-password-field.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user creates a auth token with invalid credential \"admin\" \u0026 \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1094000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-16T17:47:43.232Z",
+        "line": 41,
+        "name": "The purpose of this testcase is to verify the login API functionality, while user set blank value for username and valid value for password field.",
+        "description": "",
+        "id": "create-auth-token-api:;the-purpose-of-this-testcase-is-to-verify-the-login-api-functionality--while-user-set-blank-value-for-username-and-valid-value-for-password-field.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user has access to endpoint \"createAuthToken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createAuthToken\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_has_access_to_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user creates a auth token with invalid credential \"\" \u0026 \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"password123\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_creates_a_auth_token_with_invalid_credential(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1125000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user should get the error message \"Bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bad credentials\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.CreateToken.user_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Create Auth token API:",
+    "description": "",
+    "id": "create-auth-token-api:",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/createAuthenticationToken.feature",
+    "tags": [
+      {
+        "name": "@bookerAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
